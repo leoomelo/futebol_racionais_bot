@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/bot.js"
+    "start": "node src/bot.js",
+    "build": "rm -rf public && mkdir public && echo 'Futebol Racionais Bot' > ./public/index.html"
   },
   "keywords": [],
   "author": "",
