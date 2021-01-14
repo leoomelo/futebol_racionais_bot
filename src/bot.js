@@ -13,6 +13,6 @@ async function basicInfo(response) {
   return response.map((item, index) => `${item.date} - ${item.home} ${item.homeScore} X ${item.awayScore} ${item.away}`)
 }
 
-schedule.scheduleJob('0 0-23 * * *', function() {
+schedule.scheduleJob('0 */1 * * *', function() {
   getMatchesToday()
 })
